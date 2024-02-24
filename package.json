@@ -1,14 +1,23 @@
 {
+  "homepage": "https://lauramro.github.io/SankeyChartSLR",
   "name": "sankeychartslr",
   "version": "1.0.0",
   "description": "SankeyChartSLR",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "love"
   ],
   "author": "PavLav",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.1.1",
+    "webpack": "^5.90.2",
+    "webpack-cli": "^5.1.4"
+  }
 }
